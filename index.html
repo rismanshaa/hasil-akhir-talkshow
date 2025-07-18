@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Simulation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+  <div id="header">
+    <div class="title-nav">
+      <button class="nav-button" onclick="changeTitle(-1)">&lt;</button>
+      <h1 id="title"></h1>
+      <button class="nav-button" onclick="changeTitle(1)">&gt;</button>
+    </div>
+  </div>  
+
+
+ <div id="commentBox"></div>
+
+    <div class="sound-buttons">
+      <button onclick="playSound(1)">🔊 </button>
+      <button onclick="playSound(2)">😺 </button>
+      <button onclick="playSound(3)">🎤 </button>
+      <button onclick="playSound(4)">🤣 </button>
+      <button onclick="playSound(5)">👏 </button>
+    </div>
+
+   <div class="comment-buttons">
+      <button onclick="addComment(1)">1</button>
+      <button onclick="addComment(2)">2</button>
+      <button onclick="addComment(3)">3</button>
+    </div>
+  
+
+  <audio id="player"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
